@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0.2rem;
+    font-family: 'MonteCarlo', cursive;
+}
+
+.kepdoboz {
+    max-width: 61%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid black;
+}
+
+.kep {
+    height: 50vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;    
+}
+
+.nyil {
+    width: calc(1.5rem + 1vw);
+    margin: 0;
+    position: absolute;
+    top: 35%;
+}
+
+.balra {
+    left: 10%;
+}
+
+.jobbra {
+    transform: rotate(180deg);
+    right: 10%;
+}
+
+.clicked {
+    text-align: center;
+}
+
+.szoveg {
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+/* indexképek flexezve*/
+#keptarvalaszto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(0.1rem + 1.0vh);
+}
+
+.thumbnail {
+    display: flex;
+    height: calc(0.1rem + 6.0vh);
+    margin: calc(0.1rem + 0.7vw);
+    margin-bottom: 10px;
+    border: 5px double rgb(172, 44, 44);
+    border-radius: 8%;
+    opacity: 0.2;
+}
+
+.kiskep {
+    border-radius: 8%;
+}
+
+.thumbnail:hover {
+    opacity: 0.7;
+    transform: scale(1.3)
+}
+
+.op {
+    opacity: 0.9;
+}
