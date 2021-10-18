@@ -6,7 +6,7 @@
                                     // F: Azért nem kell leírni a fenti sorokoat, mert a betöltőfg definiálása UTÁN!!! és NEM ELŐTTE!!! meghívta a betöltőfg-t index=0 kezdőértékkel.   
 
 // T: GENERALVÁLTOZÓK                                        
-let index = 0
+let index =0
 let elozobetoltes = 0
                                     // Ezt a 2 sort majd várhatóan kitörlöm.
                                         // $(".thumbnail[data-szamozo='" + elozobetoltes + "']").toggleClass("op")
@@ -15,7 +15,7 @@ let elozobetoltes = 0
 
 
 // T: BETÖLTŐFG
-                                    // F: 0 bemeneti értékkel indul a betöltőfüggvény + append-es függvényhez hozzátettem indulásként a data-szímozo=0- s thumbnail toggle-zását.
+//                                     // F: 0 bemeneti értékkel indul a betöltőfüggvény + append-es függvényhez hozzátettem indulásként a data-szímozo=0- s thumbnail toggle-zását.
 let betoltofg = (kepIndexe) => {
                                         console.log(elozobetoltes)
                                         console.log(kepIndexe)
@@ -30,12 +30,12 @@ let betoltofg = (kepIndexe) => {
                                         // $(` .thumbnail[data-szamozo='${kepIndexe}'] `).toggleClass("op")
 
                                     // K-J:.........................K-J: A felső toggle-s változat működik mindkettő jelöléssel (de arra a 2 első thumbnail-re nem, amelyek a html-ben vannak!!!), de a css box-shadow változat valamiért nem működik.
-                                        // $(".thumbnail[data-szamozo='" + kepIndexe + "']").css("box-shadow", "0 0 10px 15px black")
+                                    // $(".thumbnail[data-szamozo='" + kepIndexe + "']").css("box-shadow", "0 0 10px 15px black")
                                         // $(` .thumbnail[data-szamozo='${kepIndexe}'] `).css("box-shadow", "0 0 10px 15px black")
 
     elozobetoltes = kepIndexe
 }
-betoltofg(0)
+betoltofg(index)
                                     // K: ..........................Ez a 2 sor rendben van a prg-ban, de érdekel, hogy ezt a betoltofg(0)  -t miért nem csinálja meg minden eges felhasználói prg-futtatáskor? 
 
 
@@ -83,5 +83,7 @@ $(".thumbnail[data-szamozo='0']").toggleClass("op")
 
 $("#keptarvalaszto").on("click", ".thumbnail", function() {
             let melyikreKattintott = $(this).attr('data-szamozo')
-            betoltofg (melyikreKattintott)
+            index = parseInt(melyikreKattintott)
+            betoltofg (index)
 })
+
