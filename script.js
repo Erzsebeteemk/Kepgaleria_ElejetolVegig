@@ -66,8 +66,6 @@ $(".balra").click(() => {
 kepadatoktomb.forEach((tombelem, szamol) => {
 
     $("#keptarvalaszto").append(` <div class="thumbnail" data-szamozo="${szamol}" >   <img class="kiskep"   src="${tombelem.photo}" alt="kiskepek"> </div>  `)
-        let modwidth=90
-        $(".kiskep").width(modwidth)
 }
 )
 $(".thumbnail[data-szamozo='0']").toggleClass("op")
