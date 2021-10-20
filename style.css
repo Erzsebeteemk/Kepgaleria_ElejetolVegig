@@ -1,3 +1,9 @@
+/* Betűméretre és ahhoz tartoó @media-ra: Reszponzív tipográfia (Mérei Tamás 2021.01.05.) */
+html {
+    font-size: 10px;
+}
+
+
 body {
     margin: 0;
     box-sizing: border-box;
@@ -18,9 +24,9 @@ background-size: cover; */
 
 
 h1 {
-    font-size: 5rem;
-    margin-top: 2.0rem;
-    margin-bottom: 2.0rem;
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     font-family: 'MonteCarlo', cursive;
 }
@@ -33,12 +39,6 @@ h1 {
     height: 50vh;
     margin: 1rem auto;
     box-shadow: 0 30px 40px -20px rgba(0,0,0,0.5);
-}
-
-@media(orientation: portrait) {
-    .kepdoboz {
-        height: 40vh;
-    }
 }
 
 .kep {
@@ -54,22 +54,22 @@ h1 {
 .nyil {
     width: calc(1rem + 1vw);
     position: absolute;
-    top: 50%;
+    top: 45%;
 }
 
 .balra {
-    left: -5%;
+    left: -12%;
 }
 
 .jobbra {
     transform: rotate(180deg);
-    right: -5%;
+    right: -12%;
 }
 
 .clicked {
     text-align: center;
     font-size: 2.5rem;
-    margin: 3rem 0 2rem 0;
+    margin: 1rem 0 0.5rem 0;
 }
 
 .szoveg {
@@ -90,7 +90,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap-reverse;
-    border: 4px solid red;
+    border: 2px solid red;
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -99,10 +99,10 @@ h1 {
 }
 
 .thumbnail {
-    width: calc(0.1rem + 5.0vh);
-    height: calc(0.1rem + 5.0vh);
-    margin: calc(0.1rem + 0.5vw);
-    border: 10px double rgb(172, 44, 44);
+    width: calc(0.1rem + 3.0vw);
+    height: calc(0.1rem + 3.0vw);
+    margin: calc(0.1rem + 0.1vw);
+    border: 2px double rgb(172, 44, 44);
     border-radius: 6%;
     opacity: 0.2;
 }
@@ -127,13 +127,62 @@ h1 {
 
 
 
-/* Reszponzív tipográfia (Mérei Tamás 2021.01.05.) */
-html {
-    font-size: 10px;
-}
-
+/* @media(min-width) */
 @media(min-width:480px) {
     html {
         font-size: calc(1em+0.5vw);
     }
+}
+
+@media(min-width:1000px) {
+    .thumbnail {
+        width: calc(0.1rem + 4.0vw);
+        height: calc(0.1rem + 4.0vw);
+        margin: calc(0.1rem + 0.3vw);
+        border: 5px double rgb(172, 44, 44);
+    }
+}
+
+
+
+/* @media(orientation:portrait) */
+@media(orientation:portrait) {
+    .kepdoboz {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 1rem auto;
+        box-shadow: 0 30px 40px -20px rgba(0,0,0,0.5);
+    }
+    
+    .kep {
+        max-width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 1%;    
+    }
+    
+    .nyil {
+        position: absolute;
+        top: 113%;
+    }
+    
+    .balra {
+        left: 5%;
+    }
+    
+    .jobbra {
+        transform: rotate(180deg);
+        right: 7%;
+    }
+
+
+
+
+
+
 }
