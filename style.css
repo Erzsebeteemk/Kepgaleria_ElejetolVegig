@@ -2,39 +2,48 @@ body {
     margin: 0;
     box-sizing: border-box;
     user-select: none;
-    max-width: 100vw;
+    width: 100vw;
     margin-left: auto;
     margin-right: auto;
 
-background-image: linear-gradient( 
+/* background-image: linear-gradient( 
     rgba(255, 255, 255, 0.4), 
     rgba(255, 255, 255, 0.4)), url("imageArunachala/hatter.jfif");
 background-repeat: no-repeat;
 background-position: center;
 background-origin: border-box;
 background-attachment: fixed;
-background-size: cover;
+background-size: cover; */
 }
 
 
 h1 {
     font-size: 5rem;
-    margin-top: 3.0rem;
-    margin-bottom: 3.0rem;
+    margin-top: 2.0rem;
+    margin-bottom: 2.0rem;
     text-align: center;
     font-family: 'MonteCarlo', cursive;
 }
 
 .kepdoboz {
     position: relative;
-    /* max-width: 61%;
-    margin-left: auto;
-    margin-right: auto; */
-    /* border: 5px solid black; */
+    border: 5px solid black;
+    width: 80%;
+    max-width: 68%;
+    height: 50vh;
+    margin: 1rem auto;
+    box-shadow: 0 30px 40px -20px rgba(0,0,0,0.5);
+}
+
+@media(orientation: portrait) {
+    .kepdoboz {
+        height: 40vh;
+    }
 }
 
 .kep {
-    height: 50vh;
+    max-width: 100%;
+    height: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -44,24 +53,23 @@ h1 {
 
 .nyil {
     width: calc(1rem + 1vw);
-    /* margin: 0; */
     position: absolute;
     top: 50%;
 }
 
 .balra {
-    left: 12%;
+    left: -5%;
 }
 
 .jobbra {
     transform: rotate(180deg);
-    right: 12%;
+    right: -5%;
 }
 
 .clicked {
     text-align: center;
     font-size: 2.5rem;
-    margin: 5rem 0 4rem 0;
+    margin: 3rem 0 2rem 0;
 }
 
 .szoveg {
@@ -82,6 +90,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap-reverse;
+    border: 4px solid red;
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -90,17 +99,19 @@ h1 {
 }
 
 .thumbnail {
-    display: flex;
+    width: calc(0.1rem + 5.0vh);
     height: calc(0.1rem + 5.0vh);
     margin: calc(0.1rem + 0.5vw);
-    /* margin-bottom: 10px; */
-    border: 2px double rgb(172, 44, 44);
+    border: 10px double rgb(172, 44, 44);
     border-radius: 6%;
     opacity: 0.2;
 }
 
 .kiskep {
     border-radius: 1%;
+    width: 100%;
+    height: 100%;
+    flex: 1;
 }
 
 .thumbnail:hover {
@@ -111,7 +122,7 @@ h1 {
 /* Jelzi, hogy hol tartok. */
 .op {
     opacity: 0.5;
-    box-shadow: 0 2px 3px 2px rgb(185, 79, 79);
+    box-shadow: 0 2px 3px -2px rgb(185, 79, 79);
 }
 
 
