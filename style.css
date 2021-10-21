@@ -5,6 +5,7 @@ html {
 
 
 body {
+    position: relative;
     margin: 0;
     box-sizing: border-box;
     user-select: none;
@@ -32,11 +33,12 @@ h1 {
 }
 
 .kepdoboz {
-    position: relative;
+    /* position: relative; */
     border: 5px solid black;
-    width: 80%;
-    max-width: 68%;
-    height: 50vh;
+    max-width: 96%;
+    /* max-width: 90%; */
+    height: 43vh;
+    /* max-height: 60vh; */
     margin: 1rem auto;
     box-shadow: 0 30px 40px -20px rgba(0,0,0,0.5);
 }
@@ -53,18 +55,18 @@ h1 {
 
 .nyil {
     width: calc(1rem + 2vw);
+    top: calc(7rem + 22vh);
     position: absolute;
-    bottom: 45%;
-    background-color: blue;
+    background-color: rgb(0, 255, 106);
 }
 
 .balra {
-    left: -12%;
+    margin-left: calc(0.1rem + 3.5vw);
 }
 
 .jobbra {
     transform: rotate(180deg);
-    right: -12%;
+    margin-left: calc(0.1rem + 93.8vw);
 }
 
 .clicked {
@@ -100,9 +102,9 @@ h1 {
 }
 
 .thumbnail {
-    width: calc(0.1rem + 6.0vw);
-    height: calc(0.1rem + 5.0vw);
-    margin: calc(0.1rem + 0.7vw);
+    width: calc(0.1rem + 3.5vw);
+    height: calc(0.1rem + 2.5vw);
+    margin: calc(0.1rem + 0.6vw);
     border: 2px double rgb(172, 44, 44);
     border-radius: 6%;
     opacity: 0.2;
@@ -128,22 +130,59 @@ h1 {
 
 
 
-/* @media(min-width) */
+/* @media(min-width) Betűméret */
 @media(min-width:480px) {
     html {
         font-size: calc(1em+0.4vw);
     }
 }
 
+
+
+/* @media(min-width) Magasság (képdoboz-magasság), Fekvő képernyőnél */
+@media(min-width:730px) {
+    .kepdoboz {
+        height: 50vh;
+    }
+}
+
+@media(min-width:860px) {
+    .kepdoboz {
+        height: 55vh;
+    }
+}
+
+@media(min-width:900px) {
+    .kepdoboz {
+        height: 60vh;
+    }
+}
+
 @media(min-width:1000px) {
+    .kepdoboz {
+        height: 65vh;
+    }
+
     .thumbnail {
         border: 5px double rgb(172, 44, 44);
     }
 }
 
+@media(min-width:1030px) {
+    .kepdoboz {
+        height: 70vh;
+    }
+}
+
+@media(min-width:1100px) {
+    .kepdoboz {
+        height: 75vh;
+    }
+}
 
 
-/* @media(orientation:portrait) */
+
+/* @media(orientation:portrait) Szélesség (képdoboz-szélesség), Álló képernyőnél */
 @media(orientation:portrait) {
     .kepdoboz {
         width: 94%;
@@ -163,16 +202,10 @@ h1 {
         border-radius: 1%;    
     }
     
-    .nyil {
-        bottom: -15%;
+    .thumbnail {
+        width: calc(0.1rem + 6.0vw);
+        height: calc(0.1rem + 5.0vw);
+        margin: calc(0.1rem + 0.7vw);
     }
-    
-    .balra {
-        left: 5%;
-    }
-    
-    .jobbra {
-        transform: rotate(180deg);
-        right: 7%;
-    }
+
 }
