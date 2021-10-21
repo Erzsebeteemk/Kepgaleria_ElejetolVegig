@@ -35,7 +35,7 @@ h1 {
 .kepdoboz {
     border: 5px solid black;
     max-width: 96%;
-    height: 60vh;
+    height: 55vh;
     max-height: 70vh;
     margin: 1rem auto;
     box-shadow: 0 30px 40px -20px rgba(0,0,0,0.5);
@@ -59,12 +59,12 @@ h1 {
 }
 
 .balra {
-    margin-left: calc(0.1rem + 7.5vw);
+    margin-left: calc(0.1rem + 11.5vw);
 }
 
 .jobbra {
     transform: rotate(180deg);
-    margin-left: calc(0.1rem + 90.0vw);
+    margin-left: calc(0.1rem + 86.0vw);
 }
 
 .clicked {
@@ -200,15 +200,9 @@ h1 {
         display: block;
         border-radius: 1%;    
     }
-    
-    .thumbnail {
-        width: calc(0.1rem + 6.0vw);
-        height: calc(0.1rem + 5.0vw);
-        margin: calc(0.1rem + 0.7vw);
-    }
 
     .nyil {
-        top: calc(0.1rem + 28vh);
+        top: calc(0.1rem + 18vh);
     }
 
     .balra {
@@ -217,5 +211,11 @@ h1 {
     
     .jobbra {
         margin-left: calc(0.1rem + 94.0vw);
+    }
+    
+    .thumbnail {
+        width: calc(0.1rem + 6.0vw);
+        height: calc(0.1rem + 5.0vw);
+        margin: calc(0.1rem + 0.7vw);
     }
 }
