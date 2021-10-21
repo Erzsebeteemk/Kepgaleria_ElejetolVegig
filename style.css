@@ -33,12 +33,10 @@ h1 {
 }
 
 .kepdoboz {
-    /* position: relative; */
     border: 5px solid black;
     max-width: 96%;
-    /* max-width: 90%; */
     height: 43vh;
-    /* max-height: 60vh; */
+    max-height: 70vh;
     margin: 1rem auto;
     box-shadow: 0 30px 40px -20px rgba(0,0,0,0.5);
 }
@@ -66,7 +64,7 @@ h1 {
 
 .jobbra {
     transform: rotate(180deg);
-    margin-left: calc(0.1rem + 93.8vw);
+    margin-left: calc(0.1rem + 92.8vw);
 }
 
 .clicked {
@@ -138,8 +136,8 @@ h1 {
 }
 
 
-
-/* @media(min-width) Magasság (képdoboz-magasság), Fekvő képernyőnél */
+/*.......................................................
+@media(min-width) Magasság (képdoboz-magasság), Fekvő képernyőnél
 @media(min-width:730px) {
     .kepdoboz {
         height: 50vh;
@@ -179,6 +177,7 @@ h1 {
         height: 75vh;
     }
 }
+...........................................................*/
 
 
 
