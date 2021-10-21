@@ -35,7 +35,7 @@ h1 {
 .kepdoboz {
     border: 5px solid black;
     max-width: 96%;
-    height: 70vh;
+    height: 65vh;
     max-height: 70vh;
     margin: 1rem auto;
     box-shadow: 0 30px 40px -20px rgba(0,0,0,0.5);
@@ -53,18 +53,18 @@ h1 {
 
 .nyil {
     width: calc(1rem + 2vw);
-    top: calc(7rem + 22vh);
+    top: calc(0.1rem + 45vh);
     position: absolute;
     background-color: rgb(0, 255, 106);
 }
 
 .balra {
-    margin-left: calc(0.1rem + 3.5vw);
+    margin-left: calc(0.1rem + 5.5vw);
 }
 
 .jobbra {
     transform: rotate(180deg);
-    margin-left: calc(0.1rem + 93.3vw);
+    margin-left: calc(0.1rem + 92.0vw);
 }
 
 .clicked {
@@ -207,4 +207,11 @@ h1 {
         margin: calc(0.1rem + 0.7vw);
     }
 
+    .balra {
+        margin-left: calc(0.1rem + 3.5vw);
+    }
+    
+    .jobbra {
+        margin-left: calc(0.1rem + 94.0vw);
+    }
 }
